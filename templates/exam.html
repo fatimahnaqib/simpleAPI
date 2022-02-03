@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title>List of Exams</title>
+</head>
+<body>
+    <div class=page>
+        <h2>Exams taken place so far:</h2>
+        {% for exam in exams %}
+            <div class=flash>Exam {{ exam.exam }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>

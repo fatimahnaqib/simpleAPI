@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Exam Scores</title>
+</head>
+<body>
+    <div class=page>
+        <h2>Student Average and Scores for Exam: {{ exam_id }}</h2>
+        <h4>Average Score: {{ avgScore }}</h4>
+        {% for student in students %}
+            <div class=flash>{{ student.score }}</div>
+        {% endfor %}
+      </div>  
+</body>
+</html>

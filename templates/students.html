@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title>List of Students</title>
+</head>
+<body>
+    <div class=page>
+        <h2>List of all the students</h2>
+            {% for student_name in students %}
+            <div class=flash>{{ student_name.studentId }}</div>
+            {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Student test scores</title>
+</head>
+<body>
+    <h2>Scores of student : {{ studentName }}</h2>
+    <h4>Average Score: {{ avgScore }}</h4>
+    {% for studentScore in studentScores %}
+        <div class=flash>Exam {{ studentScore.exam }}: Score: {{ studentScore.score }}</div>
+    {% endfor %}
+</body>
+</html>
